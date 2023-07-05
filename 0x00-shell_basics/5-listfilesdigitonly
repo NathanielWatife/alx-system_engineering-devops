@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -la --format=long --user --group --numeric-ids
+ls -na
