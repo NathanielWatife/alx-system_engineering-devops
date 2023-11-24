@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Displa a list of currently running process with hierarchy
+ps aux --forest
