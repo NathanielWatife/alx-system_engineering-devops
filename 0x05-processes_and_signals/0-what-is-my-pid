@@ -1,5 +1,6 @@
-#!/usr/bin/evn bash
-#get the PID of the script
+#!/usr/bin/env bash
+
+# Get the PID of the script
 pid=$$
 
 echo "PID of the scripts: $pid"
