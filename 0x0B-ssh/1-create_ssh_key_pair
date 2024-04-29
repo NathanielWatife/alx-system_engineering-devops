@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Create an RSA key
+
+ssh-keygen -f schgool -b 4096 -N betty
