@@ -1,9 +1,22 @@
 #!/usr/bin/env bash
-# Install Nginx and the init file have only a message
+# This scripts installs Nginx on a ubuntu server
 
-sudo apt update -y
-sudo apt upgrade -y
-sudo apt install nginx -y
-suod service nginx start
-echo "Hello World!" | tee /var/www/html/index.nginx-debian.html
+
+
+# update the package list
+apt-get update -y
+
+# install nginx
+apt-get install nginx -y
+
+
+# create an html file that nginx will serve
+echo "Hello world" > /var/www/html/index.html
+
+# Ensure nginx is on port 80 and restarts using init.d
+/etc/init.d/nginx restart
+
+
+# verify
+echo "Nginx has been installed and configured.You can verify with curl."
 
